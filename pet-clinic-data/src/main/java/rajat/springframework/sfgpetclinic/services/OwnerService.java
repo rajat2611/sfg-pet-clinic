@@ -2,15 +2,9 @@ package rajat.springframework.sfgpetclinic.services;
 
 import rajat.springframework.sfgpetclinic.model.Owner;
 
-import java.util.Set;
 
-public interface OwnerService {
+public interface OwnerService extends CrudService<Owner,Long> {
 
     Owner findByLastName(String lastname);
 
-    Owner findById(Long id);
-
-    Owner save(Owner owner);
-
-    Set<Owner> findAll();
 }
