@@ -1,10 +1,12 @@
 package rajat.springframework.sfgpetclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import rajat.springframework.sfgpetclinic.model.Vet;
 import rajat.springframework.sfgpetclinic.services.VetService;
 
 import java.util.Set;
 
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
     @Override
     public Set<Vet> findAll() {
